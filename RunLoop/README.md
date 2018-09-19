@@ -12,9 +12,11 @@ RunLoop在iOS开发中是一个比较基础的知识，笔者也从本篇文章�
 ### 二、内容缩略图
 ![RunLoop缩略图](https://upload-images.jianshu.io/upload_images/1893416-64e98880a3034b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 ### 三、其他
-#### 3.1 RunLoop内部实现
+#### 3.1 RunLoop官方介绍
+![RunLoop官方介绍](https://upload-images.jianshu.io/upload_images/1893416-4e52ef213bd980e1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#### 3.2 RunLoop内部实现
 ```
 /// 用DefaultMode启动
 void CFRunLoopRun(void) {
@@ -128,7 +130,7 @@ int CFRunLoopRunSpecific(runloop, modeName, seconds, stopAfterHandle) {
 }
 ```
 
-#### 3.2 创建RunLoop
+#### 3.3 创建RunLoop
 苹果不允许直接创建 RunLoop，它只提供了两个自动获取的函数：CFRunLoopGetMain() 和 CFRunLoopGetCurrent()。 这两个函数内部的逻辑大概是下面这样:
 ```
 /// 全局的Dictionary，key 是 pthread_t， value 是 CFRunLoopRef
@@ -172,7 +174,7 @@ CFRunLoopRef CFRunLoopGetCurrent() {
 
 ```
 
-#### 3.3 RunLoop回调函数调用栈
+#### 3.4 RunLoop回调函数调用栈
 ```
 {
     /// 1. 通知Observers，即将进入RunLoop
