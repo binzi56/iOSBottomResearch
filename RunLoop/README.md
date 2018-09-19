@@ -10,6 +10,7 @@ RunLoop在iOS开发中是一个比较基础的知识，笔者也从本篇文章�
 7. RunLoop实际应用
 
 ### 二、内容缩略图
+具体内容请查看RunLoop.xmind；
 ![RunLoop缩略图](https://upload-images.jianshu.io/upload_images/1893416-64e98880a3034b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 三、其他
