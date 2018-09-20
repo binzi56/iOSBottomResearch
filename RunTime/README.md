@@ -7,6 +7,7 @@
 4. Runtime实际应用
 
 ### 二、内容缩略图
+具体内容请查看Runtime.xmind；
 ![Runtime缩略图](https://upload-images.jianshu.io/upload_images/1893416-8a26ae3b61d58632.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
@@ -15,7 +16,7 @@
 类的定义：
 ```
 typedef struct objc_class *Class;
-struct objc_class { 
+struct objc_class {
 Class isa                                 OBJC_ISA_AVAILABILITY; // metaclass
 #if !__OBJC2__
 Class super_class                         OBJC2_UNAVAILABLE; // 父类
@@ -33,7 +34,7 @@ struct objc_protocol_list *protocols      OBJC2_UNAVAILABLE; // 存储该类声�
 ```
 #### 3.2 Runtime执行过程相关函数
 ```
-IMP lookUpImpOrForward(Class cls, SEL sel, id inst, 
+IMP lookUpImpOrForward(Class cls, SEL sel, id inst,
 bool initialize, bool cache, bool resolver)
 {
 IMP imp = nil;
@@ -75,9 +76,9 @@ if (initialize  &&  !cls->isInitialized()) {
 runtimeLock.unlockRead();
 _class_initialize (_class_getNonMetaClass(cls, inst));
 runtimeLock.read();
-// If sel == initialize, _class_initialize will send +initialize and 
-// then the messenger will send +initialize again after this 
-// procedure finishes. Of course, if this is not being called 
+// If sel == initialize, _class_initialize will send +initialize and
+// then the messenger will send +initialize again after this
+// procedure finishes. Of course, if this is not being called
 // from the messenger then it won't happen. 2778172
 }
 
@@ -122,7 +123,7 @@ goto done;
 }
 else {
 // Found a forward:: entry in a superclass.
-// Stop searching, but don't cache yet; call method 
+// Stop searching, but don't cache yet; call method
 // resolver for this class first.
 break;
 }
@@ -145,13 +146,13 @@ if (resolver  &&  !triedResolver) {
 runtimeLock.unlockRead();
 _class_resolveMethod(cls, sel, inst);
 runtimeLock.read();
-// Don't cache the result; we don't hold the lock so it may have 
+// Don't cache the result; we don't hold the lock so it may have
 // changed already. Re-do the search from scratch instead.
 triedResolver = YES;
 goto retry;
 }
 
-// No implementation found, and method resolver didn't help. 
+// No implementation found, and method resolver didn't help.
 // Use forwarding.
 
 imp = (IMP)_objc_msgForward_impcache;
@@ -167,5 +168,5 @@ return imp;
 
 
 ## 学习:
-[iOS 模块分解—「Runtime面试、工作」看我就 🐒 了 ^_^.](https://www.jianshu.com/p/19f280afcb24)
-[Objective-C Runtime 1小时入门教程](https://www.ianisme.com/ios/2019.html)
+* [iOS 模块分解—「Runtime面试、工作」看我就 🐒 了 ^_^.](https://www.jianshu.com/p/19f280afcb24)
+* [Objective-C Runtime 1小时入门教程](https://www.ianisme.com/ios/2019.html)

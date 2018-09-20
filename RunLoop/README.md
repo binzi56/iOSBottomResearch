@@ -233,4 +233,4 @@ video:
 
 blog:
 * [深入理解RunLoop](http://blog.ibireme.com/2015/05/18/runloop/)
-*  [iOS刨根问底-深入理解RunLoop](https://www.cnblogs.com/kenshincui/p/6823841.html)
+* [iOS刨根问底-深入理解RunLoop](https://www.cnblogs.com/kenshincui/p/6823841.html)
