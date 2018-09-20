@@ -106,12 +106,14 @@ UITableViewDataSource
                                @"Demo3ViewController",
                                @"Demo4ViewController"]},
                  @{@"title":@"3. KVC进阶用法",
-                   @"value": @[@"Demo5 | 创建类，对象，方法",
-                               @"Demo6 | 方法交换",
-                               @"Demo6 | NSCoding的自动归档和解档"],
+                   @"value": @[@"Demo5 | 字典操作",
+                               @"Demo6 | 消息传递",
+                               @"Demo7 | 聚合操作符",
+                               @"Demo8 | 数组操作符"],
                    @"class": @[@"Demo5ViewController",
                                @"Demo6ViewController",
-                               @"Demo7ViewController"]}
+                               @"Demo7ViewController",
+                               @"Demo8ViewController"]}
                  ];
 }
 

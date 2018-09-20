@@ -25,6 +25,10 @@
 		183F6B102153C75300D3EC63 /* Panda.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B0F2153C75300D3EC63 /* Panda.m */; };
 		183F6B132153CE2400D3EC63 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B122153CE2400D3EC63 /* Human.m */; };
 		183F6B162153D21900D3EC63 /* Container.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B152153D21900D3EC63 /* Container.m */; };
+		183F6B1A2153DC9B00D3EC63 /* Demo5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B192153DC9B00D3EC63 /* Demo5ViewController.m */; };
+		183F6B1E2153DCB200D3EC63 /* Demo6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B1D2153DCB200D3EC63 /* Demo6ViewController.m */; };
+		183F6B222153DCC800D3EC63 /* Demo7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B212153DCC800D3EC63 /* Demo7ViewController.m */; };
+		183F6B262153DCDB00D3EC63 /* Demo8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,14 @@
 		183F6B122153CE2400D3EC63 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		183F6B142153D21900D3EC63 /* Container.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		183F6B152153D21900D3EC63 /* Container.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Container.m; sourceTree = "<group>"; };
+		183F6B182153DC9B00D3EC63 /* Demo5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo5ViewController.h; sourceTree = "<group>"; };
+		183F6B192153DC9B00D3EC63 /* Demo5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo5ViewController.m; sourceTree = "<group>"; };
+		183F6B1C2153DCB200D3EC63 /* Demo6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo6ViewController.h; sourceTree = "<group>"; };
+		183F6B1D2153DCB200D3EC63 /* Demo6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo6ViewController.m; sourceTree = "<group>"; };
+		183F6B202153DCC800D3EC63 /* Demo7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo7ViewController.h; sourceTree = "<group>"; };
+		183F6B212153DCC800D3EC63 /* Demo7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo7ViewController.m; sourceTree = "<group>"; };
+		183F6B242153DCDB00D3EC63 /* Demo8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo8ViewController.h; sourceTree = "<group>"; };
+		183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo8ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,10 @@
 				183F6AC12153992900D3EC63 /* AppDelegate.m */,
 				183F6AC32153992900D3EC63 /* ViewController.h */,
 				183F6AC42153992900D3EC63 /* ViewController.m */,
+				183F6B232153DCCD00D3EC63 /* Demo8 */,
+				183F6B1F2153DCB900D3EC63 /* Demo7 */,
+				183F6B1B2153DCA200D3EC63 /* Demo6 */,
+				183F6B172153DC8100D3EC63 /* Demo5 */,
 				183F6B0A2153C29900D3EC63 /* Demo4 */,
 				183F6B002153C0B500D3EC63 /* Demo3 */,
 				183F6AF621539B7F00D3EC63 /* Demo2 */,
@@ -212,6 +228,42 @@
 				183F6B152153D21900D3EC63 /* Container.m */,
 			);
 			path = Demo4;
+			sourceTree = "<group>";
+		};
+		183F6B172153DC8100D3EC63 /* Demo5 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6B182153DC9B00D3EC63 /* Demo5ViewController.h */,
+				183F6B192153DC9B00D3EC63 /* Demo5ViewController.m */,
+			);
+			path = Demo5;
+			sourceTree = "<group>";
+		};
+		183F6B1B2153DCA200D3EC63 /* Demo6 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6B1C2153DCB200D3EC63 /* Demo6ViewController.h */,
+				183F6B1D2153DCB200D3EC63 /* Demo6ViewController.m */,
+			);
+			path = Demo6;
+			sourceTree = "<group>";
+		};
+		183F6B1F2153DCB900D3EC63 /* Demo7 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6B202153DCC800D3EC63 /* Demo7ViewController.h */,
+				183F6B212153DCC800D3EC63 /* Demo7ViewController.m */,
+			);
+			path = Demo7;
+			sourceTree = "<group>";
+		};
+		183F6B232153DCCD00D3EC63 /* Demo8 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6B242153DCDB00D3EC63 /* Demo8ViewController.h */,
+				183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */,
+			);
+			path = Demo8;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,14 +399,18 @@
 				183F6AFC21539BC100D3EC63 /* Person.m in Sources */,
 				183F6AF921539B9400D3EC63 /* Demo2ViewController.m in Sources */,
 				183F6B162153D21900D3EC63 /* Container.m in Sources */,
+				183F6B1A2153DC9B00D3EC63 /* Demo5ViewController.m in Sources */,
+				183F6B1E2153DCB200D3EC63 /* Demo6ViewController.m in Sources */,
 				183F6B0D2153C2AE00D3EC63 /* Demo4ViewController.m in Sources */,
 				183F6B132153CE2400D3EC63 /* Human.m in Sources */,
 				183F6B092153C19F00D3EC63 /* NSObject+KVC.m in Sources */,
 				183F6AC52153992900D3EC63 /* ViewController.m in Sources */,
 				183F6AF5215399E100D3EC63 /* Demo1ViewController.m in Sources */,
 				183F6AFF2153A38B00D3EC63 /* Dog.m in Sources */,
+				183F6B222153DCC800D3EC63 /* Demo7ViewController.m in Sources */,
 				183F6AD02153992C00D3EC63 /* main.m in Sources */,
 				183F6AC22153992900D3EC63 /* AppDelegate.m in Sources */,
+				183F6B262153DCDB00D3EC63 /* Demo8ViewController.m in Sources */,
 				183F6B102153C75300D3EC63 /* Panda.m in Sources */,
 				183F6B032153C0D000D3EC63 /* Demo3ViewController.m in Sources */,
 			);
