@@ -5,7 +5,7 @@
 ### [RunLoop](https://github.com/binzi56/iOSBottomResearch/tree/master/RunLoop)
 ![RunLoop缩略图](https://upload-images.jianshu.io/upload_images/1893416-64e98880a3034b42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### RunTime
+### Runtime
 
 ### KVC
 
