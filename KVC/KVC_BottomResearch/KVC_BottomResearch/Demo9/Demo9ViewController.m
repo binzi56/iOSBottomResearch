@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSMutableArray *arr = [NSMutableArray array];
+    NSMutableSet *arr = [NSMutableSet set];
     for (int i = 0; i < 10; i++) {
         Human *human = [Human new];
         
@@ -32,7 +32,7 @@
     NSLog(@"%@", [arr valueForKey:@"age"]);
     
     
-    NSMutableArray *arr1 = [NSMutableArray array];
+    NSMutableSet *arr1 = [NSMutableSet set];
     for (int i = 0; i < 10; i++) {
         Human *human = [Human new];
         
@@ -42,12 +42,11 @@
         [arr1 addObject:human];
     }
     
-    NSArray *tempArr = @[arr,arr1];
     
-    NSSet *set = [NSSet setWithArray:tempArr];
+    NSSet *set = [NSSet setWithObjects:arr,arr1, nil];
     
     NSArray *resultArr = [set valueForKeyPath:@"@distinctUnionOfSets.age"];
-//    NSLog(@"resultArr = %@", resultArr);
+    NSLog(@"resultArr = %@", resultArr);
 }
 
 - (void)didReceiveMemoryWarning {
