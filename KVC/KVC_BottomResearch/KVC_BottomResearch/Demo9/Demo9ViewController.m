@@ -1,19 +1,19 @@
 //
-//  Demo8ViewController.m
+//  Demo9ViewController.m
 //  KVC_BottomResearch
 //
 //  Created by 帅斌 on 2018/9/20.
 //  Copyright © 2018年 personal. All rights reserved.
 //
 
-#import "Demo8ViewController.h"
+#import "Demo9ViewController.h"
 #import "Human.h"
 
-@interface Demo8ViewController ()
+@interface Demo9ViewController ()
 
 @end
 
-@implementation Demo8ViewController
+@implementation Demo9ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

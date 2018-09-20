@@ -7,6 +7,7 @@
 //
 
 #import "Demo7ViewController.h"
+#import "Human.h"
 
 @interface Demo7ViewController ()
 
@@ -18,7 +19,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSMutableArray *arr = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        Human *human = [Human new];
+        
+        NSDictionary *dic = @{@"name": @"Jack",
+                              @"age": @(23 + 3*arc4random_uniform(6))};
+        [human setValuesForKeysWithDictionary:dic];
+        [arr addObject:human];
+    }
     
+    NSLog(@"%@", [arr valueForKey:@"age"]);
+    
+    //平均年龄
+    NSInteger avg = [[arr valueForKeyPath:@"@avg.age"] integerValue];
+    NSLog(@"%ld", avg);
 }
 
 - (void)didReceiveMemoryWarning {

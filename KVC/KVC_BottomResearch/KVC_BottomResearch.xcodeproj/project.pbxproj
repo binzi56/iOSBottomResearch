@@ -29,6 +29,7 @@
 		183F6B1E2153DCB200D3EC63 /* Demo6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B1D2153DCB200D3EC63 /* Demo6ViewController.m */; };
 		183F6B222153DCC800D3EC63 /* Demo7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B212153DCC800D3EC63 /* Demo7ViewController.m */; };
 		183F6B262153DCDB00D3EC63 /* Demo8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */; };
+		183F6B2A2153E97600D3EC63 /* Demo9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6B292153E97600D3EC63 /* Demo9ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		183F6B212153DCC800D3EC63 /* Demo7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo7ViewController.m; sourceTree = "<group>"; };
 		183F6B242153DCDB00D3EC63 /* Demo8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo8ViewController.h; sourceTree = "<group>"; };
 		183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo8ViewController.m; sourceTree = "<group>"; };
+		183F6B282153E97600D3EC63 /* Demo9ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo9ViewController.h; sourceTree = "<group>"; };
+		183F6B292153E97600D3EC63 /* Demo9ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo9ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 				183F6AC12153992900D3EC63 /* AppDelegate.m */,
 				183F6AC32153992900D3EC63 /* ViewController.h */,
 				183F6AC42153992900D3EC63 /* ViewController.m */,
+				183F6B272153E95700D3EC63 /* Demo9 */,
 				183F6B232153DCCD00D3EC63 /* Demo8 */,
 				183F6B1F2153DCB900D3EC63 /* Demo7 */,
 				183F6B1B2153DCA200D3EC63 /* Demo6 */,
@@ -264,6 +268,15 @@
 				183F6B252153DCDB00D3EC63 /* Demo8ViewController.m */,
 			);
 			path = Demo8;
+			sourceTree = "<group>";
+		};
+		183F6B272153E95700D3EC63 /* Demo9 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6B282153E97600D3EC63 /* Demo9ViewController.h */,
+				183F6B292153E97600D3EC63 /* Demo9ViewController.m */,
+			);
+			path = Demo9;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +420,7 @@
 				183F6AC52153992900D3EC63 /* ViewController.m in Sources */,
 				183F6AF5215399E100D3EC63 /* Demo1ViewController.m in Sources */,
 				183F6AFF2153A38B00D3EC63 /* Dog.m in Sources */,
+				183F6B2A2153E97600D3EC63 /* Demo9ViewController.m in Sources */,
 				183F6B222153DCC800D3EC63 /* Demo7ViewController.m in Sources */,
 				183F6AD02153992C00D3EC63 /* main.m in Sources */,
 				183F6AC22153992900D3EC63 /* AppDelegate.m in Sources */,
