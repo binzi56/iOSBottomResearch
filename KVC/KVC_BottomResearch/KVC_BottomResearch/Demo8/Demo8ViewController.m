@@ -37,7 +37,7 @@
     
     //去重
     NSArray *unionArr = [arr valueForKeyPath:@"@unionOfObjects.age"];
-    NSLog(@"arr1 = %@", unionArr);
+    NSLog(@"unionArr = %@", unionArr);
 }
 
 - (void)didReceiveMemoryWarning {

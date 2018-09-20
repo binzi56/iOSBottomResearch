@@ -31,13 +31,23 @@
     
     NSLog(@"%@", [arr valueForKey:@"age"]);
     
-    //不去重
-    NSArray *distinctUnionArr = [arr valueForKeyPath:@"@distinctUnionOfObjects.age"];
-    NSLog(@"arr = %@", distinctUnionArr);
     
-    //去重
-    NSArray *unionArr = [arr valueForKeyPath:@"@unionOfObjects.age"];
-    NSLog(@"arr1 = %@", unionArr);
+    NSMutableArray *arr1 = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        Human *human = [Human new];
+        
+        NSDictionary *dic = @{@"name": @"Jack",
+                              @"age": @(23 + 3*arc4random_uniform(6))};
+        [human setValuesForKeysWithDictionary:dic];
+        [arr1 addObject:human];
+    }
+    
+    NSArray *tempArr = @[arr,arr1];
+    
+    NSSet *set = [NSSet setWithArray:tempArr];
+    
+    NSArray *resultArr = [set valueForKeyPath:@"@distinctUnionOfSets.age"];
+//    NSLog(@"resultArr = %@", resultArr);
 }
 
 - (void)didReceiveMemoryWarning {
