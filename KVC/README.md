@@ -11,7 +11,7 @@ KVC(`Key Value Coding`)，相关函数在`NSKeyValueCoding.h`文件中，是一�
 
 ### 二、内容缩略图
 具体内容请查看KVC.xmind；
-![KVC缩略图](https://upload-images.jianshu.io/upload_images/1893416-cc89a7159d26ea45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![KVC缩略图](https://upload-images.jianshu.io/upload_images/1893416-36ef949eb4d299eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 三、其他
 #### 3.1 KVC异常处理及正确性验证
