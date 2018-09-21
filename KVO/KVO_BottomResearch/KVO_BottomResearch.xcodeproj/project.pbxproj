@@ -17,6 +17,7 @@
 		183F6BA22154876100D3EC63 /* KVO_BottomResearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BA12154876100D3EC63 /* KVO_BottomResearchUITests.m */; };
 		183F6BB3215487E400D3EC63 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB2215487E400D3EC63 /* Demo1ViewController.m */; };
 		183F6BB6215487ED00D3EC63 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB5215487ED00D3EC63 /* Demo2ViewController.m */; };
+		183F6BB92154893900D3EC63 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB82154893900D3EC63 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		183F6BB2215487E400D3EC63 /* Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		183F6BB4215487ED00D3EC63 /* Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
 		183F6BB5215487ED00D3EC63 /* Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		183F6BB72154893900D3EC63 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		183F6BB82154893900D3EC63 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 			children = (
 				183F6BB1215487E400D3EC63 /* Demo1ViewController.h */,
 				183F6BB2215487E400D3EC63 /* Demo1ViewController.m */,
+				183F6BB72154893900D3EC63 /* Person.h */,
+				183F6BB82154893900D3EC63 /* Person.m */,
 			);
 			path = Demo1;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183F6BB92154893900D3EC63 /* Person.m in Sources */,
 				183F6BB6215487ED00D3EC63 /* Demo2ViewController.m in Sources */,
 				183F6B822154875C00D3EC63 /* ViewController.m in Sources */,
 				183F6BB3215487E400D3EC63 /* Demo1ViewController.m in Sources */,

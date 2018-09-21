@@ -7,8 +7,11 @@
 //
 
 #import "Demo1ViewController.h"
+#import "Person.h"
 
 @interface Demo1ViewController ()
+
+@property (nonatomic, strong) Person *per;
 
 @end
 
@@ -17,21 +20,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.per = [Person new];
+    
+    //NSKeyValueObservingOptionPrior 值改变返回两次（修改前，修改后）
+//    [self.per addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionPrior | NSKeyValueObservingOptionNew context:nil];
+    
+    [self.per addObserver:self forKeyPath:@"fullName" options:NSKeyValueObservingOptionPrior | NSKeyValueObservingOptionNew context:nil];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    NSLog(@"observeValueForKeyPath:\nkeyPath:%@\nobject:%@\nchange:%@\ncontext:%@", keyPath, object, change, context);
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    _per.age++;
+    _per.firstName = @"帅";
+    _per.lastName = @"斌";
 }
-*/
+
+- (void)dealloc
+{
+//    [self.per removeObserver:self forKeyPath:@"age"];
+    
+    [self.per removeObserver:self forKeyPath:@"fullName"];
+
+}
 
 @end
