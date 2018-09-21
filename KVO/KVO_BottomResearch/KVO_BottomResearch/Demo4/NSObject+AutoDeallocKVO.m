@@ -1,37 +1,18 @@
-# KVO
+//
+//  NSObject+AutoDeallocKVO.m
+//  KVO_BottomResearch
+//
+//  Created by 帅斌 on 2018/9/21.
+//  Copyright © 2018年 personal. All rights reserved.
+//
 
-KVO(`Key Value Observing`)，相关函数在`NSKeyValueObserving.h`文件中，其实就是键值监听，可以用于监听某个对象属性值的改变。
-
-### 一、目录
-1. 初识KVO
-2. KVO的基本使用
-3. KVO底层原理
-4. 简单自定义KVO
-5. KVO延展知识
-
-### 二、内容缩略图
-![KVO缩略图](https://upload-images.jianshu.io/upload_images/1893416-e05384851cc01891.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-### 三、其他
-#### 3.1 KVO子类观察者属性重写
-```
-- (void)setName:(NSString *)name
-{
-    [self willChangeValueForKey:@"name"];       //在调用存取方法之前调用
-    [super setValue:@"newName" forKey:@"name"]; //调用父类的存取方法
-    [self didChangeValueForKey:@"name"];        //在调用存取方法之后调用
-}
-```
-
-#### 3.2 自定义KVO
-```
-#import "NSObject+KVO.h"
+#import "NSObject+AutoDeallocKVO.h"
 #import <objc/message.h>
 
-@implementation NSObject (KVO)
+@implementation NSObject (AutoDeallocKVO)
 
-// 添加观察者
-- (void)gv_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context {
+//添加观察者
+- (void)zb_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context {
 
     // 动态创建一个子类
     Class newClass = [self createClass:keyPath];
@@ -62,7 +43,7 @@ KVO(`Key Value Observing`)，相关函数在`NSKeyValueObserving.h`文件中，�
         // class
         Method classMethod = class_getInstanceMethod([self class], @selector(class));
         const char* classTypes = method_getTypeEncoding(classMethod);
-        class_addMethod(newClass, @selector(class), (IMP)tz_class, classTypes);
+        class_addMethod(newClass, @selector(class), (IMP)zb_class, classTypes);
 
         // setter
         NSString* setterMethodName = setterForGetter(keyPath);
@@ -70,14 +51,42 @@ KVO(`Key Value Observing`)，相关函数在`NSKeyValueObserving.h`文件中，�
         Method setterMethod = class_getInstanceMethod([self class], setterSEL);
         const char* setterTypes = method_getTypeEncoding(setterMethod);
 
-        class_addMethod(newClass, setterSEL, (IMP)tz_setter, setterTypes);
+        class_addMethod(newClass, setterSEL, (IMP)zb_setter, setterTypes);
+
+
+        //2.添加析构方法
+        SEL deallocSEL = NSSelectorFromString(@"dealloc");
+        Method deallocMethod = class_getInstanceMethod([self class], deallocSEL);
+        const char* deallocTypes = method_getTypeEncoding(deallocMethod);
+        class_addMethod(newClass, deallocSEL, (IMP)myDealloc, deallocTypes);
+
+
+//        //1.hook dealloc
+//         [self hookDealloc];
 
     }
     return newClass;
 }
 
+
+void myDealloc(id self, SEL _cmd) {
+    // 父类
+    Class superClass = [self class];//class_getSuperclass(object_getClass(self));
+
+    object_setClass(self, superClass);
+
+    NSLog(@"");
+}
+
+////1.
+//- (void)hookDealloc {
+//    Method m1 = class_getInstanceMethod(object_getClass(self), NSSelectorFromString(@"dealloc"));
+//    Method m2 = class_getInstanceMethod(object_getClass(self), @selector(myDealloc));
+//    method_exchangeImplementations(m1, m2);
+//}
+
 #pragma mark - c 函数
-static void tz_setter(id self, SEL _cmd, id newValue) {
+static void zb_setter(id self, SEL _cmd, id newValue) {
     NSLog(@"%s", __func__);
 
     struct objc_super superStruct = {
@@ -98,13 +107,13 @@ static void tz_setter(id self, SEL _cmd, id newValue) {
 }
 
 
-Class tz_class(id self, SEL _cmd) {
+Class zb_class(id self, SEL _cmd) {
     return class_getSuperclass(object_getClass(self));
 }
 
 
-/// 移除观察者
-- (void)gv_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath {
+// 移除观察者
+- (void)zb_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath {
 
     // 父类
     Class superClass = [self class];
@@ -117,30 +126,26 @@ Class tz_class(id self, SEL _cmd) {
 
 #pragma mark - 从get方法获取set方法的名称 key ===>>> setKey:
 static NSString  * setterForGetter(NSString *getter){
-
+    
     if (getter.length <= 0) { return nil; }
-
+    
     NSString *firstString = [[getter substringToIndex:1] uppercaseString];
     NSString *leaveString = [getter substringFromIndex:1];
-
+    
     return [NSString stringWithFormat:@"set%@%@:",firstString,leaveString];
 }
 
 #pragma mark - 从set方法获取getter方法的名称 set<Key>:===> Key
 static NSString * getterForSetter(NSString *setter){
-
+    
     if (setter.length <= 0 || ![setter hasPrefix:@"set"] || ![setter hasSuffix:@":"]) { return nil;}
-
+    
     NSRange range = NSMakeRange(3, setter.length-4);
     NSString *getter = [setter substringWithRange:range];
     NSString *firstString = [[getter substringToIndex:1] lowercaseString];
     getter = [getter stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:firstString];
-
+    
     return getter;
 }
 
 @end
-```
-
-## 学习：
-* [iOS开发 -- KVO的实现原理与具体应用](https://www.jianshu.com/p/e59bb8f59302)

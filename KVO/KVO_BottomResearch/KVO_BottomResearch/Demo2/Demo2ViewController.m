@@ -56,7 +56,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
-    NSLog(@"observeValueForKeyPath:\nkeyPath:%@\nobject:%@\nchange:%@\ncontext:%@", keyPath, object, change, context);
+    NSLog(@"Demo3ViewController~observeValueForKeyPath:\nkeyPath:%@\nobject:%@\nchange:%@\ncontext:%@", keyPath, object, change, context);
 }
 
 
@@ -72,6 +72,14 @@
 
     //NSKVONotifying_Dog创建后一直存在
     [self printClasses:[Dog class]];
+    
+    /*
+     2018-09-21 15:49:46.103496+0800 KVO_BottomResearch[13148:16787892] classes = (
+     Dog,
+     "NSKVONotifying_Dog"
+     )
+     
+     */
     
 }
 
@@ -160,7 +168,7 @@
  NSKeyValueNotifyObserver
         |
         v
- - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+ - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
  */
 
 @end

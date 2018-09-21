@@ -20,6 +20,14 @@
 		183F6BB92154893900D3EC63 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB82154893900D3EC63 /* Person.m */; };
 		183F6BBC2154903100D3EC63 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BBB2154903000D3EC63 /* Dog.m */; };
 		183F6BC021549BE800D3EC63 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */; };
+		183F6BC32154DCBD00D3EC63 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BC22154DCBD00D3EC63 /* Cat.m */; };
+		183F6BC62154DCE700D3EC63 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BC52154DCE700D3EC63 /* NSObject+KVO.m */; };
+		183F6BCA2154E6CD00D3EC63 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BC92154E6CD00D3EC63 /* Demo4ViewController.m */; };
+		183F6BCD2154E6E900D3EC63 /* Panda.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BCC2154E6E900D3EC63 /* Panda.m */; };
+		183F6BD02154E71700D3EC63 /* NSObject+AutoDeallocKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BCF2154E71700D3EC63 /* NSObject+AutoDeallocKVO.m */; };
+		183F6BD42154EDD500D3EC63 /* Demo5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BD32154EDD500D3EC63 /* Demo5ViewController.m */; };
+		183F6BD72154EE0D00D3EC63 /* NSObject+BlockKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BD62154EE0D00D3EC63 /* NSObject+BlockKVO.m */; };
+		183F6BDB2154F33D00D3EC63 /* Demo6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BDA2154F33D00D3EC63 /* Demo6ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,22 @@
 		183F6BBB2154903000D3EC63 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		183F6BBE21549BE800D3EC63 /* Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
 		183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
+		183F6BC12154DCBD00D3EC63 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		183F6BC22154DCBD00D3EC63 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		183F6BC42154DCE700D3EC63 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		183F6BC52154DCE700D3EC63 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		183F6BC82154E6CD00D3EC63 /* Demo4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
+		183F6BC92154E6CD00D3EC63 /* Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
+		183F6BCB2154E6E900D3EC63 /* Panda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Panda.h; sourceTree = "<group>"; };
+		183F6BCC2154E6E900D3EC63 /* Panda.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Panda.m; sourceTree = "<group>"; };
+		183F6BCE2154E71600D3EC63 /* NSObject+AutoDeallocKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoDeallocKVO.h"; sourceTree = "<group>"; };
+		183F6BCF2154E71700D3EC63 /* NSObject+AutoDeallocKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoDeallocKVO.m"; sourceTree = "<group>"; };
+		183F6BD22154EDD500D3EC63 /* Demo5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo5ViewController.h; sourceTree = "<group>"; };
+		183F6BD32154EDD500D3EC63 /* Demo5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo5ViewController.m; sourceTree = "<group>"; };
+		183F6BD52154EE0D00D3EC63 /* NSObject+BlockKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockKVO.h"; sourceTree = "<group>"; };
+		183F6BD62154EE0D00D3EC63 /* NSObject+BlockKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockKVO.m"; sourceTree = "<group>"; };
+		183F6BD92154F33D00D3EC63 /* Demo6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo6ViewController.h; sourceTree = "<group>"; };
+		183F6BDA2154F33D00D3EC63 /* Demo6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo6ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +144,9 @@
 				183F6B7E2154875C00D3EC63 /* AppDelegate.m */,
 				183F6B802154875C00D3EC63 /* ViewController.h */,
 				183F6B812154875C00D3EC63 /* ViewController.m */,
+				183F6BD82154F32A00D3EC63 /* Demo6 */,
+				183F6BD12154EDBA00D3EC63 /* Demo5 */,
+				183F6BC72154E54B00D3EC63 /* Demo4 */,
 				183F6BBD21549BCB00D3EC63 /* Demo3 */,
 				183F6BB0215487CB00D3EC63 /* Demo2 */,
 				183F6BAF215487C200D3EC63 /* Demo1 */,
@@ -175,10 +202,47 @@
 		183F6BBD21549BCB00D3EC63 /* Demo3 */ = {
 			isa = PBXGroup;
 			children = (
+				183F6BC12154DCBD00D3EC63 /* Cat.h */,
+				183F6BC22154DCBD00D3EC63 /* Cat.m */,
 				183F6BBE21549BE800D3EC63 /* Demo3ViewController.h */,
 				183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */,
+				183F6BC42154DCE700D3EC63 /* NSObject+KVO.h */,
+				183F6BC52154DCE700D3EC63 /* NSObject+KVO.m */,
 			);
 			path = Demo3;
+			sourceTree = "<group>";
+		};
+		183F6BC72154E54B00D3EC63 /* Demo4 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6BC82154E6CD00D3EC63 /* Demo4ViewController.h */,
+				183F6BC92154E6CD00D3EC63 /* Demo4ViewController.m */,
+				183F6BCB2154E6E900D3EC63 /* Panda.h */,
+				183F6BCC2154E6E900D3EC63 /* Panda.m */,
+				183F6BCE2154E71600D3EC63 /* NSObject+AutoDeallocKVO.h */,
+				183F6BCF2154E71700D3EC63 /* NSObject+AutoDeallocKVO.m */,
+			);
+			path = Demo4;
+			sourceTree = "<group>";
+		};
+		183F6BD12154EDBA00D3EC63 /* Demo5 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6BD22154EDD500D3EC63 /* Demo5ViewController.h */,
+				183F6BD32154EDD500D3EC63 /* Demo5ViewController.m */,
+				183F6BD52154EE0D00D3EC63 /* NSObject+BlockKVO.h */,
+				183F6BD62154EE0D00D3EC63 /* NSObject+BlockKVO.m */,
+			);
+			path = Demo5;
+			sourceTree = "<group>";
+		};
+		183F6BD82154F32A00D3EC63 /* Demo6 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6BD92154F33D00D3EC63 /* Demo6ViewController.h */,
+				183F6BDA2154F33D00D3EC63 /* Demo6ViewController.m */,
+			);
+			path = Demo6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +377,18 @@
 			files = (
 				183F6BB92154893900D3EC63 /* Person.m in Sources */,
 				183F6BB6215487ED00D3EC63 /* Demo2ViewController.m in Sources */,
+				183F6BD02154E71700D3EC63 /* NSObject+AutoDeallocKVO.m in Sources */,
+				183F6BC62154DCE700D3EC63 /* NSObject+KVO.m in Sources */,
 				183F6B822154875C00D3EC63 /* ViewController.m in Sources */,
+				183F6BC32154DCBD00D3EC63 /* Cat.m in Sources */,
 				183F6BB3215487E400D3EC63 /* Demo1ViewController.m in Sources */,
+				183F6BD72154EE0D00D3EC63 /* NSObject+BlockKVO.m in Sources */,
+				183F6BCD2154E6E900D3EC63 /* Panda.m in Sources */,
+				183F6BD42154EDD500D3EC63 /* Demo5ViewController.m in Sources */,
+				183F6BDB2154F33D00D3EC63 /* Demo6ViewController.m in Sources */,
 				183F6BBC2154903100D3EC63 /* Dog.m in Sources */,
 				183F6B8D2154876000D3EC63 /* main.m in Sources */,
+				183F6BCA2154E6CD00D3EC63 /* Demo4ViewController.m in Sources */,
 				183F6B7F2154875C00D3EC63 /* AppDelegate.m in Sources */,
 				183F6BC021549BE800D3EC63 /* Demo3ViewController.m in Sources */,
 			);
@@ -488,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = KVO_BottomResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = KVO_BottomResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -11,4 +11,5 @@
 ### [KVC](https://github.com/binzi56/iOSBottomResearch/tree/master/KVC)
 ![KVC缩略图](https://upload-images.jianshu.io/upload_images/1893416-36ef949eb4d299eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### KVO
+### [KVO](https://github.com/binzi56/iOSBottomResearch/tree/master/KVO)
+![KVO缩略图](https://upload-images.jianshu.io/upload_images/1893416-e05384851cc01891.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

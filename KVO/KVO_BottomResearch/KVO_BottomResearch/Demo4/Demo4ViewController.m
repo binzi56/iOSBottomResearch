@@ -1,47 +1,47 @@
 //
-//  Demo3ViewController.m
+//  Demo4ViewController.m
 //  KVO_BottomResearch
 //
 //  Created by 帅斌 on 2018/9/21.
 //  Copyright © 2018年 personal. All rights reserved.
 //
 
-#import "Demo3ViewController.h"
-#import "Cat.h"
-#import <objc/message.h>
-#import "NSObject+KVO.h"
+#import "Demo4ViewController.h"
+#import "Panda.h"
+#import "NSObject+AutoDeallocKVO.h"
+#import <objc/runtime.h>
 
-@interface Demo3ViewController ()
+@interface Demo4ViewController ()
 
-@property (nonatomic, strong) Cat *cat;
+@property (nonatomic, strong) Panda *panda;
 
 @end
 
-@implementation Demo3ViewController
+@implementation Demo4ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _cat = [Cat new];
+    _panda = [Panda new];
     
     //添加观察者
-    [_cat gv_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    [_panda zb_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     
-    [self printClasses:[Cat class]];
+    [self printClasses:[Panda class]];
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    _cat.name = @"小花";
+    _panda.name = @"团团";
 }
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
     NSLog(@"Demo3ViewController~observeValueForKeyPath:\nkeyPath:%@\nobject:%@\nchange:%@\ncontext:%@", keyPath, object, change, context);
-
+    
 }
 
 //打印对应的类及子类
@@ -69,11 +69,4 @@
     
     NSLog(@"classes = %@", array);
 }
-
-- (void)dealloc
-{
-    [_cat gv_removeObserver:self forKeyPath:@"name"];
-}
-
-
 @end

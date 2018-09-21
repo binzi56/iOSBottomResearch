@@ -102,16 +102,15 @@ UITableViewDataSource
                    @"value": @[@"Demo2 | 底层原理及过程分析"],
                    @"class": @[@"Demo2ViewController"]},
                  @{@"title":@"3. 自定义KVO",
-                   @"value": @[@"Demo3 | 自定义KVO",
-                               @"Demo6 | 消息传递",
-                               @"Demo7 | 集合操作符",
-                               @"Demo8 | 数组操作符",
-                               @"Demo9 | 嵌套数组操作符"],
-                   @"class": @[@"Demo3ViewController",
-                               @"Demo6ViewController",
-                               @"Demo7ViewController",
-                               @"Demo8ViewController",
-                               @"Demo9ViewController"]}
+                   @"value": @[@"Demo3 | 自定义KVO"],
+                   @"class": @[@"Demo3ViewController"]},
+                 @{@"title":@"4. KVO知识延展",
+                   @"value": @[@"Demo4 | 自动销毁监听",
+                               @"Demo5 | block封装",
+                               @"Demo6 | YY封装KVO"],
+                   @"class": @[@"Demo4ViewController",
+                               @"Demo5ViewController",
+                               @"Demo6ViewController"]}
                  ];
 }
 
