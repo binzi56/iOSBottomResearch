@@ -18,6 +18,8 @@
 		183F6BB3215487E400D3EC63 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB2215487E400D3EC63 /* Demo1ViewController.m */; };
 		183F6BB6215487ED00D3EC63 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB5215487ED00D3EC63 /* Demo2ViewController.m */; };
 		183F6BB92154893900D3EC63 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BB82154893900D3EC63 /* Person.m */; };
+		183F6BBC2154903100D3EC63 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BBB2154903000D3EC63 /* Dog.m */; };
+		183F6BC021549BE800D3EC63 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		183F6BB5215487ED00D3EC63 /* Demo2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
 		183F6BB72154893900D3EC63 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		183F6BB82154893900D3EC63 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		183F6BBA2154903000D3EC63 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		183F6BBB2154903000D3EC63 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		183F6BBE21549BE800D3EC63 /* Demo3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
+		183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 				183F6B7E2154875C00D3EC63 /* AppDelegate.m */,
 				183F6B802154875C00D3EC63 /* ViewController.h */,
 				183F6B812154875C00D3EC63 /* ViewController.m */,
+				183F6BBD21549BCB00D3EC63 /* Demo3 */,
 				183F6BB0215487CB00D3EC63 /* Demo2 */,
 				183F6BAF215487C200D3EC63 /* Demo1 */,
 				183F6B832154875C00D3EC63 /* Main.storyboard */,
@@ -159,8 +166,19 @@
 			children = (
 				183F6BB4215487ED00D3EC63 /* Demo2ViewController.h */,
 				183F6BB5215487ED00D3EC63 /* Demo2ViewController.m */,
+				183F6BBA2154903000D3EC63 /* Dog.h */,
+				183F6BBB2154903000D3EC63 /* Dog.m */,
 			);
 			path = Demo2;
+			sourceTree = "<group>";
+		};
+		183F6BBD21549BCB00D3EC63 /* Demo3 */ = {
+			isa = PBXGroup;
+			children = (
+				183F6BBE21549BE800D3EC63 /* Demo3ViewController.h */,
+				183F6BBF21549BE800D3EC63 /* Demo3ViewController.m */,
+			);
+			path = Demo3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +315,10 @@
 				183F6BB6215487ED00D3EC63 /* Demo2ViewController.m in Sources */,
 				183F6B822154875C00D3EC63 /* ViewController.m in Sources */,
 				183F6BB3215487E400D3EC63 /* Demo1ViewController.m in Sources */,
+				183F6BBC2154903100D3EC63 /* Dog.m in Sources */,
 				183F6B8D2154876000D3EC63 /* main.m in Sources */,
 				183F6B7F2154875C00D3EC63 /* AppDelegate.m in Sources */,
+				183F6BC021549BE800D3EC63 /* Demo3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
