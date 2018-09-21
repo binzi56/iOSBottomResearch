@@ -10,6 +10,7 @@ KVO(`Key Value Observing`)，相关函数在`NSKeyValueObserving.h`文件中，�
 5. KVO延展知识
 
 ### 二、内容缩略图
+具体内容请查看KVO.xmind；
 ![KVO缩略图](https://upload-images.jianshu.io/upload_images/1893416-e05384851cc01891.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 三、其他
