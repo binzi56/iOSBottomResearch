@@ -714,8 +714,10 @@ objc_object::rootRetainCount()
     sidetable_lock();
     isa_t bits = LoadExclusive(&isa.bits);
     ClearExclusive(&isa.bits);
+    //判断是否是优化，存储的引用计数
     if (bits.nonpointer) {
-        uintptr_t rc = 1 + bits.extra_rc;
+        uintptr_t rc = 1 + bits.extra_rc; //从isa_t位域里面取出相应值
+        //判断散列表里面是否有
         if (bits.has_sidetable_rc) {
             rc += sidetable_getExtraRC_nolock();
         }
