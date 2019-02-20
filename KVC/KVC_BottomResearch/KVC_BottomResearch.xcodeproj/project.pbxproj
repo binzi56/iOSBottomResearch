@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1832387A221D34980033AF7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18323879221D34980033AF7B /* README.md */; };
 		183F6AC22153992900D3EC63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6AC12153992900D3EC63 /* AppDelegate.m */; };
 		183F6AC52153992900D3EC63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183F6AC42153992900D3EC63 /* ViewController.m */; };
 		183F6AC82153992900D3EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183F6AC62153992900D3EC63 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18323879221D34980033AF7B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		183F6ABD2153992800D3EC63 /* KVC_BottomResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVC_BottomResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183F6AC02153992900D3EC63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		183F6AC12153992900D3EC63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				183F6AC12153992900D3EC63 /* AppDelegate.m */,
 				183F6AC32153992900D3EC63 /* ViewController.h */,
 				183F6AC42153992900D3EC63 /* ViewController.m */,
+				18323879221D34980033AF7B /* README.md */,
 				183F6B272153E95700D3EC63 /* Demo9 */,
 				183F6B232153DCCD00D3EC63 /* Demo8 */,
 				183F6B1F2153DCB900D3EC63 /* Demo7 */,
@@ -384,6 +387,7 @@
 			files = (
 				183F6ACD2153992C00D3EC63 /* LaunchScreen.storyboard in Resources */,
 				183F6ACA2153992C00D3EC63 /* Assets.xcassets in Resources */,
+				1832387A221D34980033AF7B /* README.md in Resources */,
 				183F6AC82153992900D3EC63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -240,6 +240,16 @@ KVC(`Key Value Coding`)，相关函数在`NSKeyValueCoding.h`文件中，是一�
 @end
 ```
 
+#### 3.3  KVC之集合运算符
+简单集合操作符:
+```
+@count:返回一个值为集合中对象总数的NSNumber对象。
+@sum:首先把集合中的每个对象都转换为double类型，然后计算其总，最后返回一个值为这个总和的NSNumber对象。
+@avg:首先把集合中的每个对象都转换为double类型，然后计算其平均值，最后返回一个值为该平均值的NSNumber对象。
+@max:使用compare:方法来确定最大值。所以为了让其正常工作，集合中所有的对象都必须支持和另一个对象的比较。
+@min:和@max一样，但是返回的是集合中的最小值。
+```
+
 ## 学习:
 Apple
 * [KVC官方文档](https://link.jianshu.com/?t=https%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fcontent%2Fdocumentation%2FCocoa%2FConceptual%2FKeyValueCoding%2FSearchImplementation.html%23%2F%2Fapple_ref%2Fdoc%2Fuid%2F20000955-CJBBBFFA)
@@ -247,3 +257,4 @@ Apple
 blog
 * [iOS开发技巧系列---详解KVC(我告诉你KVC的一切)](https://www.jianshu.com/p/45cbd324ea65)
 * [KVC原理剖析](https://www.jianshu.com/p/1d39bc610a5b)
+* [KVC之使用Collection Operators(集合运算符)](https://www.jianshu.com/p/8f702ff8ff66)
