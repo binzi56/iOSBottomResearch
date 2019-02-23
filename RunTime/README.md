@@ -168,5 +168,5 @@ return imp;
 
 
 ## 学习:
-* [iOS 模块分解—「Runtime面试、工作」看我就 🐒 了 ^_^.](https://www.jianshu.com/p/19f280afcb24)
+* [iOS 模块分解—「Runtime面试、工作」看我就 🐒 了 ^_^.](https://www.cnblogs.com/Plainboiledwater/p/9678287.html)
 * [Objective-C Runtime 1小时入门教程](https://www.ianisme.com/ios/2019.html)
