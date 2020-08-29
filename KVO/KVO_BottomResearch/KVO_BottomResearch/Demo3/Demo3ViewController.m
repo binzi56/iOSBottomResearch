@@ -25,8 +25,18 @@
     
     _cat = [Cat new];
     
+    Class beforeClass = NSClassFromString(@"NSKVONotifying_Cat");
+    id beforeObject = [[beforeClass alloc] init];
+    NSLog(@"beforeObject-class:%@", [beforeObject class]);
+
+    
     //添加观察者
     [_cat gv_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    
+    Class afterClass = NSClassFromString(@"NSKVONotifying_Cat");
+    id afterObject = [[afterClass alloc] init];
+    
+    NSLog(@"afterClass-class:%@", [afterObject class]);
     
     [self printClasses:[Cat class]];
 }
@@ -61,6 +71,11 @@
     //遍历s
     for (int i = 0; i < count; i++) {
         if (class == class_getSuperclass(classes[i])) {
+            Class temp = classes[i];
+            if ([NSStringFromClass(temp) isEqualToString:@"NSKVONotifying_Cat"]) {
+                NSLog(@"temp=====%@", temp);
+            }
+            
             [array addObject:classes[i]];
         }
     }
