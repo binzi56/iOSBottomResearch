@@ -23,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     _cat = [Cat new];
     
     Class beforeClass = NSClassFromString(@"NSKVONotifying_Cat");
