@@ -36,9 +36,9 @@
     self.dog = [Dog new];
     
     [self.dog addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
-    
-    
-    
+    [self.dog addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
+
+        
     //添加观察者后
     Class kvo_dog_after = NSClassFromString(@"NSKVONotifying_Dog");
     if (kvo_dog_after) {
@@ -63,7 +63,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     _dog.age++;
-    
+    _dog.name = @"make";
     /*
      (lldb) p _dog->isa
      (Class) $0 = NSKVONotifying_Dog
@@ -86,6 +86,8 @@
 - (void)dealloc
 {
     [self.dog removeObserver:self forKeyPath:@"age"];
+    [self.dog removeObserver:self forKeyPath:@"name"];
+
 }
 
 
