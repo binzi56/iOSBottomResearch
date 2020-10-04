@@ -10,17 +10,17 @@
 
 @implementation Dog
 
-- (void)setAge:(NSInteger)age
-{
-    _age = age;
-}
-
-- (void)setName:(NSString *)name
-{
-    [self willChangeValueForKey:@"name"];       //在调用存取方法之前调用
-    [super setValue:@"newName" forKey:@"name"]; //调用父类的存取方法
-    [self didChangeValueForKey:@"name"];        //在调用存取方法之后调用
-}
+//- (void)setAge:(NSInteger)age
+//{
+//    _age = age;
+//}
+//
+//- (void)setName:(NSString *)name
+//{
+//    [self willChangeValueForKey:@"name"];       //在调用存取方法之前调用
+//    [super setValue:@"newName" forKey:@"name"]; //调用父类的存取方法
+//    [self didChangeValueForKey:@"name"];        //在调用存取方法之后调用
+//}
 
 
 @end
